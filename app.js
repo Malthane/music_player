@@ -100,3 +100,10 @@ const prevSong = () => {
 next.addEventListener("click", nextSong);
 // next.addEventListener('click', nextSong());  dont write like this bcz it will call right away here
 previous.addEventListener("click", prevSong);
+
+
+load.addEventListener('ended',function(){
+  forward();
+});
+audios.push(load);
+});
